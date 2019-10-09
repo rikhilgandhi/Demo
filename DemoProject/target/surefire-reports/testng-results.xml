@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="17696" started-at="2019-10-09T16:24:38Z" finished-at="2019-10-09T16:24:56Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="17696" started-at="2019-10-09T16:24:38Z" finished-at="2019-10-09T16:24:56Z">
+      <class name="tests.LOGINTFO">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.LOGINTFO@38082d64]" name="setUp" is-config="true" duration-ms="2692" started-at="2019-10-09T21:54:50Z" finished-at="2019-10-09T21:54:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testLOGINTFO()[pri:0, instance:tests.LOGINTFO@38082d64]" name="testLOGINTFO" duration-ms="3160" started-at="2019-10-09T21:54:52Z" finished-at="2019-10-09T21:54:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLOGINTFO -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.LOGINTFO@38082d64]" name="tearDown" is-config="true" duration-ms="607" started-at="2019-10-09T21:54:55Z" finished-at="2019-10-09T21:54:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LOGINTFO -->
+      <class name="tests.LOGINTFO1">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.LOGINTFO1@2ed94a8b]" name="setUp" is-config="true" duration-ms="5117" started-at="2019-10-09T21:54:38Z" finished-at="2019-10-09T21:54:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testLOGINTFO1()[pri:0, instance:tests.LOGINTFO1@2ed94a8b]" name="testLOGINTFO1" duration-ms="5465" started-at="2019-10-09T21:54:44Z" finished-at="2019-10-09T21:54:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLOGINTFO1 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.LOGINTFO1@2ed94a8b]" name="tearDown" is-config="true" duration-ms="617" started-at="2019-10-09T21:54:49Z" finished-at="2019-10-09T21:54:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LOGINTFO1 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
