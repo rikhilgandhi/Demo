@@ -23,11 +23,13 @@ public class LOGINTFO1 {
 	   driver.manage().window().maximize();
    // baseUrl = "https://www.katalon.com/";
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+    System.out.print("browser Launch");
   }
 
   @Test
   public void testLOGINTFO1() throws Exception {
     driver.get("http://52.66.204.99:8080/TradeFinOps/logout.jsf");
+    System.out.print("Appication Launch");
     driver.findElement(By.linkText("Click here to login again")).click();
     driver.findElement(By.id("j_username")).click();
     driver.findElement(By.id("j_username")).clear();
