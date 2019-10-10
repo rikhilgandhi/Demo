@@ -113,16 +113,8 @@
 					<source>1.8</source>
 					<target>1.8</target>
 				</configuration>
-			</plugin>	
-			 <plugin>
-				 
-				<configuration>
-					<suiteXmlFiles>
-						<suiteXmlFile>TestNG.xml</suiteXmlFile>
-					</suiteXmlFiles>
-				</configuration>
-			</plugin>	
-			<!-- <plugin>
+			</plugin>			
+			<plugin>
 				 <groupId>org.apache.maven.plugins</groupId>
                  <artifactId>maven-surefire-plugin</artifactId>
 				 <version>2.18.1</version>
@@ -131,7 +123,7 @@
 						<suiteXmlFile>TestNG.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
-			</plugin> -->
+			</plugin>
 		</plugins>
 	</build>
 </project>
