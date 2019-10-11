@@ -19,7 +19,7 @@ public class LOGINTFO1 {
   public void setUp() throws Exception {
    // driver = new FirefoxDriver();
     //System.setProperty("webdriver.chrome.driver", "F:\\selenium class\\Software\\chromedriver.exe");
-    System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\executable\\chromedriver.exe");
+    System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\executable\\chromedriver_linux64\\chromedriver");
 	   driver =new ChromeDriver();
 	   driver.manage().window().maximize();
    // baseUrl = "https://www.katalon.com/";
