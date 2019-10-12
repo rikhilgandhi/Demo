@@ -17,7 +17,7 @@ public class LOGINTFO {
 
   @BeforeClass(alwaysRun = true)
   public void setUp() throws Exception {
-  //  driver = new FirefoxDriver();
+  
 	  System.setProperty("webdriver.chrome.driver", "F:\\selenium class\\Software\\chromedriver.exe");
 	   driver =new ChromeDriver();
     baseUrl = "https://www.katalon.com/";
