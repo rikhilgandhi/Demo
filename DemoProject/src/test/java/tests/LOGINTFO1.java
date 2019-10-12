@@ -6,6 +6,7 @@ import org.testng.annotations.*;
 import static org.testng.Assert.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
@@ -17,10 +18,16 @@ public class LOGINTFO1 {
 
   @BeforeClass(alwaysRun = true)
   public void setUp() throws Exception {
-   // driver = new FirefoxDriver();
     //System.setProperty("webdriver.chrome.driver", "F:\\selenium class\\Software\\chromedriver.exe");
-    System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\executable\\chromedriver_linux64\\chromedriver");
-	   driver =new ChromeDriver();
+   // System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\executable\\chromedriver_win32\\chromedriver.exe");
+    System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
+    ChromeOptions options = new ChromeOptions();
+	options.addArguments("--no-sandbox");
+	options.addArguments("--disable-dev-shm-usage");
+	options.setExperimentalOption("useAutomationExtension", false);
+	 driver = new ChromeDriver(options);
+
+	 //  driver =new ChromeDriver();
 	   driver.manage().window().maximize();
    // baseUrl = "https://www.katalon.com/";
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
