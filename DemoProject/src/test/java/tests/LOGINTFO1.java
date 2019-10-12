@@ -30,7 +30,7 @@ public class LOGINTFO1 {
 	 //  driver =new ChromeDriver();
 	   driver.manage().window().maximize();
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-    System.out.print("browser Launch");
+   // System.out.print("browser Launch");
   }
 
   @Test
