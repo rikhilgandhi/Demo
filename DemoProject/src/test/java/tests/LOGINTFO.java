@@ -8,6 +8,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 //import org.openqa.selenium.firefox.FirefoxDriver;
 //import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class LOGINTFO {
   private WebDriver driver;
@@ -18,9 +19,15 @@ public class LOGINTFO {
   @BeforeClass(alwaysRun = true)
   public void setUp() throws Exception {
   
-	  System.setProperty("webdriver.chrome.driver", "F:\\selenium class\\Software\\chromedriver.exe");
+	 // System.setProperty("webdriver.chrome.driver", "F:\\selenium class\\Software\\chromedriver.exe");
+	  System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
 	   driver =new ChromeDriver();
-    baseUrl = "https://www.katalon.com/";
+	   ChromeOptions options = new ChromeOptions();
+	    options.addArguments("--headless");
+	    options.setExperimentalOption("useAutomationExtension", false);
+	    options.addArguments("--no-sandbox");
+	    options.addArguments("--disable-dev-shm-usage");
+	    driver = new ChromeDriver(options);
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
   }
 
