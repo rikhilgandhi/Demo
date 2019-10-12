@@ -21,7 +21,6 @@ public class LOGINTFO {
   
 	 // System.setProperty("webdriver.chrome.driver", "F:\\selenium class\\Software\\chromedriver.exe");
 	  System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
-	   driver =new ChromeDriver();
 	   ChromeOptions options = new ChromeOptions();
 	    options.addArguments("--headless");
 	    options.setExperimentalOption("useAutomationExtension", false);
