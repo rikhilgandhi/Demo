@@ -21,6 +21,7 @@ public class LOGINTFO1 {
    // System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\executable\\chromedriver_win32\\chromedriver.exe");
     System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
     ChromeOptions options = new ChromeOptions();
+    options.setExperimentalOption("useAutomationExtension", false);
     options.addArguments("--no-sandbox");
     options.addArguments("--disable-dev-shm-usage");
     driver = new ChromeDriver(options);
